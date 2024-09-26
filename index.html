@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap cdn link -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css'>
+    <!-- font awesome cdn link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Movies Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="phoenix.png" alt="">
+            </a>
+            <div class="end_bx">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li>Category <i class="fas fa-angle-down"></i>
+                        <div class="list">
+                            <a href="#">Trends Now</a>
+                            <a href="#">Popular</a>
+                            <a href="#">Prefrenes</a>
+                            <a href="#">Recently Added</a>
+                            <a href="#">Bollywood</a>
+                            <a href="#">Tollywood</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="search">
+                    <input type="text" placeholder="Search movies..." id="search">
+                    <i class="fas fa-search" id="search_icon"></i>
+                    <div class="search_bx2">
+                        <!-- <a href="#">
+                            <img src="Genre/a perfact.jpg" alt="">
+                            <div class="content2">
+                                <h6>A Perfact</h6>
+                                <p>2018</p>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="bell">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="user">
+                    <img src="user.png" alt="Diptan Gurung" title="Diptan Gurung">
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h6>Duration: <span id="header_dur">1h 47min</span></h6>
+            <h3 id="header_gen"><i class="fas fa-star"></i>6.5
+                <span>Action / Adventure / Sci-Fi</span>
+            </h3>
+            <h1 id="header_title">Rampage</h1>
+                        <p id="header_pra">
+                        When three different animals become infected with the dangerous 
+                        pathogen, a primatologist and a geneticist team up to stop them <br>from destroying Chicago.
+                        </p>
+                <div class="btns">
+                    <a href="#video"><button><i class="fas fa-play" id="play_btn"></i>WATCH</button></a>
+                    <button><i class="fas fa-plus"></i>ADD LIST</button>
+                </div>        
+        </div>
+        <div class="slider_btns">
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+            <h6 class="slider"></h6>
+        </div>
+
+    </header>
+
+                                            <!-- trending box start -->
+
+<div class="tranding_bx">
+        <li><a href="#" class="active"><i class="fas fa-angle-double-up"></i> Trends Now<span></span></a></li>
+        <li><a href="#"><i class="fas fa-fire"></i> Popular<span></span></a></li>
+        <li><a href="#"><i class="fas fa-star"></i> Preferences<span></span></a></li>
+        <li><a href="#"><i class="fas fa-plus"></i> Recently Added<span></span></a></li>
+</div>
+
+                                            <!-- Category box start -->
+
+<div class="cato_bx" id="cato_bx">
+        <button id="action1">Action</button>
+        <button id="crime1">Crime</button>
+        <button>Adventure</button>
+        <button>Biography</button>
+        <button>Animation</button>
+        <button>Comedy</button>
+        <button>Documentary</button>
+        <button id="Drama1">Drama</button>
+        <button>WebSeries</button>
+        <button>18+</button>
+        <button>Scifi</button>
+        <button>Horror</button>
+
+                                            <!-- All Button Copied -->
+                    
+                <div class="cato_left_right">
+                    <i class="fas fa-angle-down" id="left_scroll"></i>
+                </div>
+                <div class="cato_left_right">
+                    <i class="fas fa-angle-down" id="right_scroll"></i>
+                </div>
+</div>
+    
+                                            <!-- Movies Box Start -->
+
+<div class="movie_bx_1" id="movie_bx_1">
+                <button id="left_scroll1"><i class="fas fa-angle-down"></i></button>
+                <button id="right_scroll1"><i class="fas fa-angle-down"></i></button>
+                <div class="movie_bxx" id="action_bx"></div>
+                <div class="movie_bxx" id="crime_bx"></div>
+                <div class="movie_bxx" id="drama_bx"></div>
+</div>
+
+                                            <!-- Movies Box End -->
+
+                                            <!-- Video box start -->
+
+<div class="video_bx">
+
+                <video src="video/TREASURE - DARARI.mp4" id="video"></video>
+
+                <div class="control">
+                    <div class="play_redo">
+                        <i class="bi bi-play-fill" id="play"></i>
+                        <i class="bi bi-arrow-clockwise" id="sec_30"></i>
+                        <span>10</span>
+                    </div>
+
+                    <div class="start_seekbar_end">
+                            <span id="start_time">28.04</span>
+                        <div class="seek">
+                            <input type="range" id="seek" value="0">
+                            <h5 id="seek_2"></h5>
+                            <h4></h4>
+                            <h6 id="seek_dot"></h6>
+                        </div>
+                            <span id="end_time">40.06</span>
+                    </div>
+
+                    <div class="cc_vol_screen">
+                        <i class="bi bi-badge-cc-fill"></i>
+                        <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                        <input type="range" name="vol" id="vol">
+                        <i class="bi bi-arrows-fullscreen" id="full_screen"></i>
+                    </div>
+                </div>
+
+                <h4 class="title_video">TREASURE - DARARI (Remix) Dance Video </h4>
+                <span class="watching">
+                            <i class="fas fa-eye"></i>Watching
+                </span>
+                <div class="heart_pluse">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-plus"></i>
+                </div>
+
+        <div class="video_list">
+            <img src="img/sing off.jpg" alt="" class="video_1">
+            <img src="img/eminem.jpg" alt="" class="video_1">
+            <img src="img/uptown.jpg" alt="" class="video_1">
+        </div>
+
+</div>
+                                        
+                                            <!-- Video box end -->
+
+                                            <!-- trending box2 start -->
+
+<div class="tranding_bx" style="margin-top: 20px;">
+        <li><a href="#" class="active"><i class="fas fa-photo-video"></i> Movies<span></span></a></li>
+        <li><a href="#"><i class="fas fa-film"></i> Series<span></span></a></li>
+        <li><a href="#"><i class="fas fa-check"></i> Original Series<span></span></a></li>
+        <li><a href="#"> Trailer<span></span></a></li>
+</div>
+
+<div class="cato_bx cato_bx2">
+            <div class="left_cato">
+                <button>Sort by:</button>
+                <button id="all_btn">All</button>
+                <button id="latest_btn">Latest</button>
+                <button id="year">Year <i class="fas fa-angle-down" ></i>
+                    <div class="year_bx">
+                        <li id="year2024__btn">2024</li>
+                        <li id="year2023__btn">2023</li>
+                        <li id="year2022__btn">2022</li>
+                        <li>2021</li>
+                        <li>2020</li>
+                        <li>2019</li>
+                        <li>2018</li>
+                        <li>2017</li>
+                        <li>2016</li>
+                        <li>2015</li>
+                    </div>
+                </button>
+                <button id="a_z">A-Z <i class="fas fa-angle-down"></i>
+                    <div class="year_bx letter_bx">
+                        <li id="letter_a_btn">A</li>
+                        <li id="letter_b_btn">B</li>
+                        <li>C</li>
+                        <li>E</li>
+                        <li>F</li>
+                        <li>G/li>
+                        <li>H</li>
+                        <li id="letter_t_btn">T</li>
+                        <li>Z</li>
+                    </div>
+                </button>
+            </div>
+            <div class="right_cato">
+                <i class="fas fa-star"></i>
+                <input type="range" name="" id="change_input" min="4.2" max="9.9">
+                <span>7.0</span>
+            </div>
+</div>
+
+<div class="movie_bx_1" id="movie_bx_2">
+    <div class="all box2_actives" id="all"></div>
+        <div class="latest box2_actives" id="latest"></div>
+        <div class="year" id="year_2022"></div>
+        <div class="year" id="year_2021"></div>
+        <div class="year" id="year_2020"></div>
+        <div class="letter" id="letter_a"></div>
+        <div class="letter" id="letter_b"></div>
+        <div class="letter" id="letter_t"></div>
+        <div class="rate_change" id="rate4"></div>
+        <div class="rate_change" id="rate8"></div>
+        <!-- <div class="card">
+            <a href="#">
+                <img src="img/venom2.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Venom 2</h5>
+                    <h6>
+                        <span>2018</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/dark knight.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6>
+                        <span>2008</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>9.0</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/avengers-endgame.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Avengers-endgame</h5>
+                    <h6>
+                        <span>2019</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>8.4</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/venom2.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Venom 2</h5>
+                    <h6>
+                        <span>2018</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/dark knight.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6>
+                        <span>2008</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>9.0</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/avengers-endgame.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Avengers-endgame</h5>
+                    <h6>
+                        <span>2019</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>8.4</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/venom2.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Venom 2</h5>
+                    <h6>
+                        <span>2018</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/dark knight.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6>
+                        <span>2008</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>9.0</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/avengers-endgame.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Avengers-endgame</h5>
+                    <h6>
+                        <span>2019</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>8.4</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/venom2.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Venom 2</h5>
+                    <h6>
+                        <span>2018</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/dark knight.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6>
+                        <span>2008</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>9.0</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/avengers-endgame.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Avengers-endgame</h5>
+                    <h6>
+                        <span>2019</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>8.4</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/venom2.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Venom 2</h5>
+                    <h6>
+                        <span>2018</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/dark knight.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6>
+                        <span>2008</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>9.0</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/avengers-endgame.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Avengers-endgame</h5>
+                    <h6>
+                        <span>2019</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>8.4</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/venom2.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Venom 2</h5>
+                    <h6>
+                        <span>2018</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>6.5</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="img/dark knight.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>The Dark Knight</h5>
+                    <h6>
+                        <span>2008</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>9.0</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="card">
+            <a href="#">
+                <img src="img/avengers-endgame.jpg" alt="" class="">
+
+                <div class="content">
+                    <h5>Avengers-endgame</h5>
+                    <h6>
+                        <span>2019</span>
+
+                        <div class="rate">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-star"></i>
+                            <h6>8.4</h6>
+                        </div>
+                    </h6>
+
+                </div>
+            </a>
+        </div> -->
+</div>
+
+
+<script src="app.js"></script>
+    
+</body>
+</html>
